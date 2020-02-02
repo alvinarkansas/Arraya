@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Arraya</title>
+        <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="arraya.css">
+        <link rel="icon" href="brackets-icon.png" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <div id="mainDisplay">
+            <h1 class="bracket">[</h1>
+            <h1 id="array"></h1>
+            <h1 class="bracket">]</h1>
+        </div>
+        <div id="option">
+            <div class="btn" onclick="push(theArray)">
+                <div class="pushAndUnshift">
+                    .push
+                </div>
+            </div>
+            <div class="btn" onclick="pop(theArray)">.pop</div>
+            <div class="btn" onclick="unshift(theArray)">
+                <div class="pushAndUnshift">
+                    .unshift
+                </div>
+            </div>
+            <div class="btn" onclick="shift(theArray)">.shift</div>
+        </div>
+        <div id="inputForm">
+            <input type="text" id="pushInput" value="mango">
+            <div class="dummy"></div>
+            <input type="text" id="unshiftInput" value="caramel">
+            <div class="dummy"></div>
+        </div>
+        <script src="arraya.js"></script>
+    </body>
+</html>
